@@ -46,6 +46,7 @@ public class TestAnalyzer {
         System.out.println(getTokens(new StringReader("the full-text indexing and search API: lucene.apache.org"), new StandardAnalyzer(new FileReader("resources/en_stopword"))));
         System.out.println(getTokens(new StringReader("the full-text indexing and search API: lucene.apache.org"), new EnglishAnalyzer()));
         System.out.println(getTokens(new StringReader("the full-text indexing and search API: lucene.apache.org"), new MyAnalyzer()));
+        System.out.println(getTokens(new StringReader("prova una bella variante"), new MyAnalyzerITA()));
     }
 
 }
